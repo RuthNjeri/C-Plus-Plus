@@ -22,7 +22,8 @@ int main()
     std::cout << "***DOUBLES***" << std::endl;
     double d1 = 2.2;
     double d2 = i1; // integer assigned to a double because a double is more precise than an int, there is no loss of precision
-    int i5 = d1; // The value is trancated and prints out 2 because it's an int
+    //int i5 = d1; // The value is trancated and prints out 2 because it's an int
+    int i5 = static_cast<int>(d1); // Type casting
 
     std::cout << "***Characters***" << std::endl;
     char c1 = 'a';
@@ -38,7 +39,7 @@ int main()
     flag = d1;
     std::cout << "flag= " << flag << std::endl;
     
-    std::cout << "Auto" << std::endl;
+    std::cout << "***Auto***" << std::endl;
 
     auto a1 = 1;
     auto a2 = 2.2;
@@ -49,9 +50,10 @@ int main()
     auto a7 = 1'000'000'000'000; // Digit separaters ', changes nothing, can be put in or not
     auto a8 = 0XFF; // 255 in a hex literal
     auto a9 = 0b111; // 7 in a binary literal
-    a1 = a2; // conversion of double to int will lead to possible loss of data
+    //a1 = a2; // conversion of double to int will lead to possible loss of data
+    a1 = static_cast<int>(a2);
 
-
+    std::cout << "***Char, signed, unsigned, overflow**" << std::endl;
     unsigned char n1 = 128; // range of unsigned char 0 to 255
     char n2 = 128; // ranged of signed char -128 to 127, this line will have an overflow of -128
     std::cout << "n1= " << n1 << std::endl;
