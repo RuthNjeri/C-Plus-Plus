@@ -9,7 +9,8 @@ private:
 
 public:
 	Person(std::string first, std::string last, int arbitrary);
-	Person()=default;
+	Person();
+	~Person();
 	std::string getName();
 };
 
