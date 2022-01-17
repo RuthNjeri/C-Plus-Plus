@@ -5,7 +5,7 @@
 
 int main()
 {
-	Person p1;
+	Person p1("Ruth", "Waiganjo", 111);
 	Person p2;
 	std::string name = p1.getName();
 
