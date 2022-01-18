@@ -2,6 +2,7 @@
 //
 
 #include "Person.h"
+#include <iostream>
 
 int main()
 {
@@ -9,6 +10,8 @@ int main()
 	{ // Establishes some scope
 		Person p2;
 	} // Out of scope
+
+	std::cout << "after innermost block" << std::endl;
 
 	std::string name = p1.getName();
 

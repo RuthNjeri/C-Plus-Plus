@@ -10,7 +10,7 @@ private:
 public:
 	Person(std::string first, std::string last, int arbitrary);
 	Person();
-	~Person();
+	~Person(); // Real destructors are used to free up resources
 	std::string getName();
 };
 
