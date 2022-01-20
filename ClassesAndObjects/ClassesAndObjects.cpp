@@ -1,6 +1,6 @@
 // ClassesAndObjects.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
+#include "person.h"
 #include "status.h"
 #include "Tweeter.h"
 #include <iostream>
