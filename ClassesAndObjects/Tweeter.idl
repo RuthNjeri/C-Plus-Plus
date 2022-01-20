@@ -1,0 +1,9 @@
+namespace ClassesAndObjects
+{
+    [default_interface]
+    runtimeclass Tweeter : Windows.UI.Xaml.Controls.Page
+    {
+        Tweeter();
+        Int32 MyProperty;
+    }
+}
