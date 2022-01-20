@@ -19,7 +19,7 @@ int main()
     }
     else
     {
-        cout << "is not larger than";
+        cout << "is not larger than ";
     }
     cout << y << endl;
 
