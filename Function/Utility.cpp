@@ -24,8 +24,8 @@ bool Is2MorePrime(int const& x) {
 	return IsPrime(x + 2);
 }
 
-//int& BadFunction()
+//int& BadFunction() // Returns a dangling reference
 //{
 //	int a = 3;
 //	return a;
-//}
+//}// calling code would have a reference to a which is already out of a

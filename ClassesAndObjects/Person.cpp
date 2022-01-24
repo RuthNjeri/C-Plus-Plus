@@ -2,6 +2,7 @@
 #include <iostream>
 using std::cout;
 using std::endl;
+using std::string;
 //using namespace std; can cause confusion, it is better to specify
 
 Person::Person(std::string first, std::string last, int arbitrary)
@@ -13,15 +14,15 @@ Person::Person(std::string first, std::string last, int arbitrary)
 
 Person::Person() : arbitrarynumber(0)
 {
-	cout << "constructing " << firstname << lastname << endl;
+	cout << "constructing " << GetName() << endl;
 }
 
 Person::~Person()
 {
-	cout << "destructing " << firstname << lastname << endl;
+	cout << "destructing " << GetName() << endl;
 }
 
-std::string Person::getName()
+string Person::GetName()const
 {
 	return firstname + " " + lastname;
 }
